@@ -1,0 +1,39 @@
+#include <iostream>
+
+int main()
+{
+	double firstNumber, secondNumber;
+	char op;
+
+	double result;
+
+	// First way
+	/*std::cin >> firstNumber >> secondNumber >> op;*/
+
+	// Second way
+	/*std::cin >> op >> firstNumber >> secondNumber;*/
+
+	// Third way
+	std::cin >> firstNumber >> op >> secondNumber;
+
+	switch (op)
+	{
+	case '+':
+		result = firstNumber + secondNumber;
+		break;
+	case '-':
+		result = firstNumber - secondNumber;
+		break;
+	case '*':
+		result = firstNumber * secondNumber;
+		break;
+	case '/':
+		result = firstNumber / secondNumber;
+		break;
+	default:
+		std::cout << "Invalid operator!" << std::endl;
+		return -1;
+	}
+
+	std::cout << result;
+}
