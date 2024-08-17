@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int firstNum , secondNum ;
+    cout << "Please enter two numbers" ;
+    cin >> firstNum >> secondNum ;
+     
+    int sum = firstNum + secondNum;
+	int difference = firstNum - secondNum;
+	int product = firstNum * secondNum;
+	int division = firstNum / secondNum;
+	int reminder = firstNum % secondNum;
+
+    
+	cout << "Sum: " << sum << std::endl;
+	cout << "Difference: " << difference << std::endl;
+	cout << "Product: " << product << std::endl;
+	cout << "Division: " << division << std::endl;
+	cout << "Reminder: " << reminder << std::endl;
+}
