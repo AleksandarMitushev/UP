@@ -1,0 +1,21 @@
+#include <iostream>
+
+int main()
+{
+	int firstNum, secondNum;
+
+	std::cout << "Please enter two numbers: ";
+	std::cin >> firstNum >> secondNum;
+
+	int sum = firstNum + secondNum;
+	int difference = firstNum - secondNum;
+	int product = firstNum * secondNum;
+	int division = firstNum / secondNum;
+	int reminder = firstNum % secondNum;
+
+	std::cout << "Sum: " << sum << std::endl;
+	std::cout << "Difference: " << difference << std::endl;
+	std::cout << "Product: " << product << std::endl;
+	std::cout << "Division: " << division << std::endl;
+	std::cout << "Reminder: " << reminder << std::endl;
+}
